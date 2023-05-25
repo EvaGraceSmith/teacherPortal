@@ -2,7 +2,7 @@
   "development": {
     "username": "asenathsmith",
     "password": null,
-    "database": "database_development",
+    "database": "teacherportal",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
