@@ -9,17 +9,14 @@ module.exports = async (req, res, next) => {
 
     const token = req.headers.authorization.split(' ').pop();
     const validUser = await users.authenticateToken(token);
-    console.log( '*************', validUser);
     req.user = validUser;
     req.token = validUser.token;
     next();
   } catch (e) {
     console.error(e.message || e);
-    res.status(403).send(e.message);
-    // _authError(e);
+    _authError();
   }
-  function _authError(e) {
-    res.status(403).send('Invalid Login');
-
+  function _authError() {
+    res.status(403).send('Invalid Login line 20');
   }
 };
