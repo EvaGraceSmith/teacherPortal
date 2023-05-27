@@ -44,6 +44,17 @@ describe('CRUD Routes', () => {
     });
   });
 
+  describe('404', () => {
+    it('should not create a new user as GET route is incorrect', async () => {
+      const response = await request(app)
+        .get('/signup')
+        .send({ username: 'newuser', password: 'newpassword', role: 'student' })
+        .set('Authorization', `Bearer ${ourTestAdmin.token}`);
+      expect(response.status).toBe(404);
+      // Add additional assertions as per your requirements
+    });
+  });
+
   // Test the POST /signin route
   describe('POST /signin', () => {
     it('should authenticate the user', async () => {
@@ -81,7 +92,7 @@ describe('CRUD Routes', () => {
   describe('PUT /update/:id', () => {
     it('should update a user', async () => {
       const response = await request(app)
-        .put('/update/1')
+        .put('/update/2')
         .set('Authorization', `Bearer ${ourTestAdmin.token}`)
         .send({ username: 'newusername' });
       expect(response.status).toBe(200);
@@ -93,7 +104,7 @@ describe('CRUD Routes', () => {
   describe('DELETE /delete/:id', () => {
     it('should delete a user', async () => {
       const response = await request(app)
-        .delete('/delete/1')
+        .delete('/delete/2')
         .set('Authorization', `Bearer ${ourTestAdmin.token}`);
       expect(response.status).toBe(200);
       // Add additional assertions as per your requirements
