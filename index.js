@@ -13,6 +13,18 @@ db.sync()
   })
   .catch(console.error);
 
+async function initializeDatabase() {
+  try {
+    // Synchronize the Regions model with the database table
+    await db.sync({ force: true });
+    console.log('All models were synchronized successfully');
+  } catch (error) {
+    console.error('Error occurred while syncing all models.', error);
+  }
+}
+
+// uncommenting function below will drop the database and recreate it
+// initializeDatabase();
 
 
 
