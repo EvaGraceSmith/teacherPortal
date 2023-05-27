@@ -1,13 +1,13 @@
 'use strict';
 
-process.env.SECRET = "TEST_SECRET";
+process.env.SECRET = 'secret';
 
-const bearer = require('../../../../src/auth/middleware/bearer.js');
-const { db, users } = require('../../../../src/auth/models/index.js');
+const bearer = require('../src/auth/middleware/bearer.js');
+const { db, users } = require('../src/auth/models/index.js');
 const jwt = require('jsonwebtoken');
 
 let userInfo = {
-  admin: { username: 'admin', password: 'password' },
+  admin: { username: 'admin', password: 'admin' },
 };
 
 // Pre-load our database with fake users
@@ -27,7 +27,7 @@ describe('Auth Middleware', () => {
     status: jest.fn(() => res),
     send: jest.fn(() => res),
     json: jest.fn(() => res),
-  }
+  };
   const next = jest.fn();
 
   describe('user authentication', () => {
