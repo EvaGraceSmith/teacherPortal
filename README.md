@@ -4,12 +4,17 @@
 
 ## Project: Teacher Portal
 
-### Authors: [Francisco Sanchez](https://github.com/c0d3cisco)
+### Authors:
 
-Eva Grace Smith
+[Francisco Sanchez](https://github.com/c0d3cisco)
+
+[Eva Grace Smith](https://github.com/EvaGraceSmith)
 
 ### Problem Domain
 
+* Create a new application using API Server and Authentication Systems.
+
+Our team was responsible for planning, executing, and presenting an application that showcases a Content Management System (CMS) using full RESTful CRUD operations.
 
 
 ### Links and Resources
@@ -19,7 +24,7 @@ Eva Grace Smith
 
 ### Collaborators
 
--
+- Mark Smith
 
 ### Setup
 
@@ -31,12 +36,10 @@ Eva Grace Smith
 
 "start": "node index.js"
 
-#### How to use your library (where applicable)
 
 #### Features / Routes
 
-- Routes could also use clothes or signin(post), signup(post), users(get), secret(get).
-- Certain routes within v2 and user options will require basic or bearer auth.
+
 - GET : `/router/index/classrooms` - get all classroom records
 - GET : `/router/index/classrooms/:id` - get a specific classroom record
 - POST : `/router/index/classrooms` - update a classroom record
@@ -47,7 +50,7 @@ Eva Grace Smith
 #### Tests
 
 - npm test will run all test suites
-- v2 route tests bring in bearer and basic auth for testing
+
 
 #### UML
 
