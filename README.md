@@ -4,7 +4,9 @@
 
 ## Project: Teacher Portal
 
-### Authors: [Francisco Sanchez](https://github.com/c0d3cisco) Eva Grace Smith
+### Authors: [Francisco Sanchez](https://github.com/c0d3cisco)
+
+Eva Grace Smith
 
 ### Problem Domain
 
@@ -13,7 +15,7 @@
 ### Links and Resources
 
 - [GitHub Actions ci/cd](https://github.com/EvaGraceSmith/teacherportal)
-<!-- - [Back-end deployment](https://auth-api-xzpo.onrender.com) -->
+- [Back-end deployment](https://teacher-portal.onrender.com)
 
 ### Collaborators
 
