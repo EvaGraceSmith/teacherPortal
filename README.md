@@ -29,7 +29,7 @@ Eva Grace Smith
 
 #### How to initialize/run your application (where applicable)
 
-- e.g. `npm start`
+"start": "node index.js"
 
 #### How to use your library (where applicable)
 
